@@ -44,24 +44,15 @@ into one integrated ecosystem capable of producing long-term commercial returns 
 
 ```mermaid
 mindmap
-
-root((Garden Route))
-
-Food Security
-
-Water Security
-
-Renewable Energy
-
-Community Development
-
-Employment
-
-Agricultural Technology
-
-Climate Resilience
-
-Regional Expansion
+  root((Garden Route))
+    Food Security
+    Water Security
+    Renewable Energy
+    Community Development
+    Employment
+    Agricultural Technology
+    Climate Resilience
+    Regional Expansion
 ```
 
 ---
@@ -331,23 +322,15 @@ Regional Hub :2028-06,2030-01
 
 ```mermaid
 flowchart LR
+    Investment --> Infrastructure
+    Infrastructure --> Production
+    Production --> Revenue
+    Revenue --> Employment
+    Employment --> Community
+    Community --> RegionalGrowth["Regional Growth"]
 
-Investment
-
---> Infrastructure
-
---> Production
-
---> Revenue
-
---> Employment
-
---> Community
-
---> Regional Growth
-
-style Community fill:#1B4332,color:#fff
-style Revenue fill:#D4AF37,color:#000
+    style Community fill:#1B4332,color:#fff
+    style Revenue fill:#D4AF37,color:#000
 ```
 
 ---
