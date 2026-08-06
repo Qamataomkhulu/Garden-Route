@@ -45,14 +45,17 @@ into one integrated ecosystem capable of producing long-term commercial returns 
 ```mermaid
 mindmap
   root((Garden Route))
-    Food Security
-    Water Security
-    Renewable Energy
-    Community Development
-    Employment
-    Agricultural Technology
-    Climate Resilience
-    Regional Expansion
+    Core Pillars
+      Food Security
+      Water Security
+      Renewable Energy
+    Socio-Economic Impact
+      Community Development
+      Employment
+    Innovation & Future
+      Agricultural Technology
+      Climate Resilience
+      Regional Expansion
 ```
 
 ---
