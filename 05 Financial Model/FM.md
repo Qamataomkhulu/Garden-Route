@@ -186,7 +186,290 @@ Each phase is funded only after key operational targets are achieved, reducing i
 | Security | Electric Fence | 1 | 1 | Planned |
 
 ---
+---
 
+# 7. Phase 1 Capital Budget (Foundation & Proof of Concept)
+
+## Strategic Objective
+
+Phase 1 establishes the minimum viable commercial operation required to validate the AgriHub model. The focus is on proving technical feasibility, securing initial customers, generating recurring revenue, and demonstrating operational resilience through integrated food production, water purification, and renewable energy.
+
+### Phase 1 Key Deliverables
+
+- Secure and prepare agricultural land
+- Install protected cultivation infrastructure
+- Commission a 10,000 L/day Reverse Osmosis (RO) water purification plant
+- Construct rainwater harvesting and bulk storage systems
+- Install a 5 kW hybrid solar PV system for irrigation and water pumping
+- Launch direct-to-consumer vegetable and purified water sales
+- Develop the nursery and seedling operation
+- Build operational procedures and governance systems
+
+---
+
+## Phase 1 Capital Allocation
+
+| Category | Description | Estimated Cost (ZAR) | % of Phase Budget |
+|-----------|-------------|---------------------:|------------------:|
+| Land Preparation & Fencing | Clearing, levelling, fencing, access roads, soil improvement | 450,000 | 9.3% |
+| Greenhouse Infrastructure | 1,000 m² multi-span tunnels with drip irrigation | 1,100,000 | 22.7% |
+| Water Infrastructure | Rainwater harvesting, RO purification plant, storage tanks, pumps | 850,000 | 17.5% |
+| Solar Energy System | 5 kW PV array, hybrid inverter, battery storage | 350,000 | 7.2% |
+| Cold Storage & Pack Area | Walk-in cold room, packing benches, shelving | 300,000 | 6.2% |
+| Logistics | Delivery bakkie, trailer, loading equipment | 550,000 | 11.3% |
+| ICT & Administration | Computers, networking, accounting systems, office setup | 150,000 | 3.1% |
+| Security | CCTV, alarm system, electric fencing, lighting | 150,000 | 3.1% |
+| Working Capital Reserve | Salaries, seeds, packaging, utilities, compliance, contingency | 950,000 | 19.6% |
+
+| **Total Phase 1 Investment** | | **R4,850,000** | **100%** |
+
+---
+
+## Phase 1 Infrastructure
+
+```mermaid
+flowchart TD
+
+Land --> Greenhouses
+Land --> OpenField["Open Field Cultivation"]
+
+Greenhouses --> Irrigation
+OpenField --> Irrigation
+
+Irrigation --> WaterStorage
+WaterStorage --> RO["RO Purification Plant"]
+
+RO --> Households
+RO --> Agriculture
+
+Solar --> Pumps
+Solar --> Irrigation
+Solar --> ColdRoom
+
+ColdRoom --> Distribution
+
+Distribution --> Customers
+
+style Solar fill:#F9A825,color:#000
+style RO fill:#1976D2,color:#fff
+style Greenhouses fill:#2E7D32,color:#fff
+```
+
+---
+
+# Phase 1 Milestones
+
+| Milestone | Target |
+|------------|--------|
+| Site secured | Month 1 |
+| Infrastructure complete | Month 4 |
+| Greenhouse operational | Month 5 |
+| Water purification operational | Month 5 |
+| First vegetable harvest | Month 6 |
+| First commercial water sales | Month 6 |
+| Monthly positive operating cash flow | Month 9 |
+
+---
+
+# 8. Phase 2 Capital Budget (Commercial Expansion)
+
+## Strategic Objective
+
+Phase 2 focuses on scaling proven operations into a commercially significant regional supplier capable of servicing households, hospitality businesses, schools, healthcare facilities, and retail distributors.
+
+Revenue generated during Phase 1, together with additional blended finance, will support this expansion.
+
+---
+
+## Phase 2 Capital Allocation
+
+| Category | Description | Estimated Cost (ZAR) |
+|-----------|-------------|---------------------:|
+| Greenhouse Expansion | Additional 2,000 m² protected cultivation | 1,400,000 |
+| Water Infrastructure Upgrade | 25,000 L/day RO plant and 50 kL storage | 950,000 |
+| Solar Expansion | Upgrade to 25 kW PV and lithium battery storage | 850,000 |
+| Packhouse & Processing | Sorting, grading, packaging and cold-chain improvements | 800,000 |
+| Fleet Expansion | Additional delivery vehicle and logistics equipment | 300,000 |
+| Working Capital | Staff expansion, inventory and operational reserve | 200,000 |
+
+| **Total Phase 2 Investment** | | **R4,500,000** |
+
+---
+
+## Commercial Expansion Model
+
+```mermaid
+flowchart LR
+
+Vegetables --> Packhouse
+Water --> Packhouse
+
+Packhouse --> Retail
+
+Packhouse --> Hospitality
+
+Packhouse --> Schools
+
+Packhouse --> Hospitals
+
+Packhouse --> SubscriptionBoxes["Subscription Customers"]
+
+style Packhouse fill:#2E7D32,color:#fff
+```
+
+---
+
+# Phase 2 Outcomes
+
+- Production capacity triples.
+- Water purification increases to 25,000 litres/day.
+- Distribution expands across the Eastern Cape.
+- Greenhouse footprint exceeds 3,000 m².
+- Renewable energy supplies the majority of operational demand.
+- Institutional contracts become a major revenue source.
+
+---
+
+# 9. Phase 3 Capital Budget (Regional AgriHub)
+
+## Strategic Objective
+
+Phase 3 transforms the enterprise into a fully integrated regional agricultural hub, incorporating advanced production technologies, high-value crop systems, and large-scale water distribution while positioning the business for replication across Southern Africa.
+
+---
+
+## Phase 3 Capital Allocation
+
+| Category | Description | Estimated Cost (ZAR) |
+|-----------|-------------|---------------------:|
+| Hydroponic Systems | Controlled Environment Agriculture (CEA) | 1,100,000 |
+| Solar Expansion | Increase capacity to 75 kW | 950,000 |
+| Water Distribution Fleet | Bulk tanker and institutional delivery | 700,000 |
+| Nursery & Research Centre | Commercial propagation and R&D | 400,000 |
+
+| **Total Phase 3 Investment** | | **R3,150,000** |
+
+---
+
+## Regional Hub Architecture
+
+```mermaid
+flowchart TD
+
+Farm --> Processing
+
+Processing --> WaterHub
+
+Processing --> Nursery
+
+Processing --> Hydroponics
+
+Hydroponics --> Distribution
+
+Nursery --> Farmers
+
+Distribution --> EasternCape["Eastern Cape Market"]
+
+EasternCape --> FutureExpansion["Future Provincial Expansion"]
+
+style Processing fill:#2E7D32,color:#fff
+style FutureExpansion fill:#C9A227,color:#000
+```
+
+---
+
+# Phase 3 Outcomes
+
+- Full energy independence.
+- Regional bulk water distribution.
+- Commercial hydroponic production.
+- Seedling supply to third-party farmers.
+- Agricultural research and innovation.
+- Replicable AgriHub model.
+
+---
+
+# 10. Startup Equipment Register
+
+## Procurement Philosophy
+
+The AgriHub will procure durable, commercial-grade infrastructure that supports long-term operational efficiency and scalability. Equipment selection will prioritise lifecycle cost, local serviceability, energy efficiency, and compatibility with future expansion phases.
+
+---
+
+## Equipment Register
+
+| Category | Equipment | Qty | Phase | Estimated Cost (ZAR) | Status |
+|-----------|-----------|----:|------:|---------------------:|--------|
+| Agriculture | Multi-span Greenhouse Tunnels (1,000 m²) | 1 | 1 | 1,100,000 | Planned |
+| Agriculture | Tractor (60–75 HP) | 1 | 2 | 750,000 | Planned |
+| Agriculture | Rotavator | 1 | 1 | 80,000 | Planned |
+| Agriculture | Brush Cutters | 4 | 1 | 24,000 | Planned |
+| Agriculture | Ride-on Mower | 1 | 1 | 120,000 | Planned |
+| Agriculture | Seedling Trays | 500 | 1 | 35,000 | Planned |
+| Agriculture | Shade Net Structures | 2 | 2 | 450,000 | Planned |
+| Irrigation | Drip Irrigation Network | Site-wide | 1 | 320,000 | Planned |
+| Irrigation | Booster Pumps | 2 | 1 | 95,000 | Planned |
+| Water | RO Purification Plant (10 kL/day) | 1 | 1 | 650,000 | Planned |
+| Water | Water Storage Tanks | 4 × 10 kL | 1 | 180,000 | Planned |
+| Water | Bulk Water Tanker | 1 | 3 | 700,000 | Planned |
+| Solar | PV Array (5–75 kW) | Modular | 1–3 | 2,150,000 | Planned |
+| Solar | Battery Storage | Modular | 1–3 | Included | Planned |
+| Cold Chain | Walk-in Cold Room | 1 | 1 | 300,000 | Planned |
+| Logistics | Delivery Bakkie | 1 | 1 | 550,000 | Planned |
+| Logistics | Refrigerated Truck | 1 | 3 | 1,100,000 | Planned |
+| Office | Computers & Networking | 5 | 1 | 90,000 | Planned |
+| Security | CCTV & Alarm System | 1 | 1 | 60,000 | Planned |
+| Security | Electric Fence | Site-wide | 1 | 180,000 | Planned |
+| Agritech | Weather Station | 1 | 2 | 45,000 | Planned |
+| Agritech | Soil Moisture Sensors | Multiple | 2 | 65,000 | Planned |
+| Agritech | Agricultural Drone | 1 | 3 | 180,000 | Planned |
+| Agritech | Farm Management ERP Software | 1 | 2 | 120,000 | Planned |
+
+---
+
+## Capital Deployment Timeline
+
+```mermaid
+timeline
+    title Five-Year Capital Deployment Strategy
+
+    Year 1 : Site Development
+           : Water Infrastructure
+           : Solar PV (5 kW)
+           : Greenhouse Construction
+           : Initial Distribution Fleet
+
+    Year 2 : Greenhouse Expansion
+           : Additional Water Storage
+           : Packhouse Construction
+
+    Year 3 : Solar Expansion (25 kW)
+           : Fleet Expansion
+           : Institutional Supply Contracts
+
+    Year 4 : Hydroponic Systems
+           : Nursery Expansion
+           : Smart Agriculture Technologies
+
+    Year 5 : Solar Expansion (75 kW)
+           : Regional Water Distribution
+           : Replication Planning
+```
+
+---
+
+## Total Capital Investment
+
+| Phase | Investment (ZAR) |
+|--------|-----------------:|
+| Phase 1 | R4,850,000 |
+| Phase 2 | R4,500,000 |
+| Phase 3 | R3,150,000 |
+| **Total Programme Investment** | **R12,500,000** |
+
+The phased capital deployment strategy ensures that each investment tranche is linked to measurable operational milestones, reducing execution risk while creating a scalable, resilient agribusiness platform capable of long-term growth and regional replication.
+---
 # 11. Procurement Schedule
 
 ## Procurement Philosophy
