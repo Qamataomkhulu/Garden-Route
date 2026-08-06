@@ -121,7 +121,7 @@ Garden-Route/
 | [`09 Website`](09%20Website) | Website source files, content, and web assets |
 | [`10 Technical Documentation`](10%20Technical%20Documentation) | System architecture and engineering specifications |
 | [`11 SOPs`](11%20SOPs) | Standard operating procedures for farm, water, and distribution operations |
-| [`12 Images`](12%20Images) | Photography, renders, and marketing imagery |
+| [`Images`](%20Images) | Photography, renders, and marketing imagery |
 | [`13 Legal`](13%20Legal) | Contracts, compliance documents, and legal agreements |
 | [`14 ESG & Impact`](14%20ESG%20&%20Impact) | Environmental, social, and governance reporting, plus impact measurement |
 | [`15 Press Kit`](15%20Press%20Kit) | Media kit, press releases, and media-ready brand assets |
