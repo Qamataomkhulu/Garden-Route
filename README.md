@@ -54,45 +54,19 @@ Full details: [`VISION_AND_MISSION.md`](VISION_AND_MISSION.md)
 The Garden Route Integrated AgriHub is designed as a **closed-loop system** — energy powers water treatment and irrigation, water and energy power food production, and food production funds reinvestment and community distribution.
 
 ```
-                              ☀️  SOLAR ENERGY
-                                    │
-                 ┌──────────────────┼──────────────────┐
-                 ▼                  ▼                  ▼
-        ┌─────────────────┐ ┌──────────────┐ ┌─────────────────┐
-        │  WATER SECURITY  │ │  IRRIGATION  │ │   FACILITIES    │
-        │ ─────────────── │ │  (Solar-Pwrd)│ │  (Cold Storage,  │
-        │ • Borehole        │ └──────┬───────┘ │   Packhouse)    │
-        │ • Rainwater        │        │         └─────────────────┘
-        │   Harvesting       │        │
-        │ • Purification     │        ▼
-        │ • Bulk Storage    │ ┌──────────────────────────┐
-        └────────┬──────────┘ │     FOOD PRODUCTION       │
-                  │            │ ────────────────────────  │
-                  │            │ • Vegetables & Herbs       │
-                  │            │ • Seedlings                │
-                  │            │ • Greenhouses (future)     │
-                  │            │ • Industrial Hemp (future) │
-                  │            └─────────────┬──────────────┘
-                  │                          │
-                  ▼                          ▼
-        ┌───────────────────┐     ┌────────────────────────┐
-        │   WATER DELIVERY    │     │      DISTRIBUTION        │
-        │  to Communities      │     │ ─────────────────────── │
-        └───────────────────┘     │ • Subscription Veg Boxes │
-                                    │ • Direct-to-Community    │
-                                    │ • Schools & Businesses   │
-                                    │ • Agri Consulting/Training│
-                                    └────────────┬──────────────┘
-                                                 ▼
-                                     ┌──────────────────────┐
-                                     │   COMMUNITY IMPACT     │
-                                     │ ───────────────────── │
-                                     │ • Jobs & Livelihoods    │
-                                     │ • Food Security         │
-                                     │ • Clean Water Access    │
-                                     │ • Youth Empowerment     │
-                                     │ • Investor Returns      │
-                                     └──────────────────────┘
+                             ```mermaid
+graph TD
+    classDef solar fill:#f9f,stroke:#333,stroke-width:2px;
+    classDef water fill:#bbf,stroke:#333,stroke-width:2px;
+    classDef food fill:#bfb,stroke:#333,stroke-width:2px;
+    
+    A[☀️ Solar Energy Array] --> B[💧 Purification & Borehole]
+    A --> C[🌱 Solar Irrigation Systems]
+    B --> D[🥬 Food Production & Seedlings]
+    C --> D
+    D --> E[📦 Subscription Boxes]
+    D --> F[🏫 School & Community Supply]
+    B --> G[🚰 Community Water Delivery]
 ```
 
 ---
@@ -153,16 +127,3 @@ This project is licensed under the [MIT License](LICENSE).
 
 
 
-```mermaid
-graph TD
-    classDef solar fill:#f9f,stroke:#333,stroke-width:2px;
-    classDef water fill:#bbf,stroke:#333,stroke-width:2px;
-    classDef food fill:#bfb,stroke:#333,stroke-width:2px;
-    
-    A[☀️ Solar Energy Array] --> B[💧 Purification & Borehole]
-    A --> C[🌱 Solar Irrigation Systems]
-    B --> D[🥬 Food Production & Seedlings]
-    C --> D
-    D --> E[📦 Subscription Boxes]
-    D --> F[🏫 School & Community Supply]
-    B --> G[🚰 Community Water Delivery]
