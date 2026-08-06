@@ -786,3 +786,361 @@ line [3.07,6.70,14.09,22.70,36.22]
 By Year 5, the Eastern Cape Integrated AgriHub is projected to have evolved from a pilot-scale climate-smart agricultural enterprise into a diversified regional agribusiness with multiple recurring revenue streams, strong operating margins, and positive cash generation.
 
 The phased investment strategy enables infrastructure to expand alongside verified market demand, supporting long-term financial sustainability while reducing capital risk for investors and funding partners.
+
+---
+
+# 15. Cash Flow Forecast
+
+## Cash Flow Management Philosophy
+
+The financial sustainability of the Eastern Cape Integrated AgriHub is founded on disciplined cash flow management. While accounting profits indicate long-term business performance, cash flow determines operational resilience, debt servicing capability, and the ability to finance future expansion.
+
+The project adopts a phased investment approach where capital expenditure is aligned with operational milestones, reducing liquidity risk during the early stages of growth.
+
+Cash generated from operations will first be allocated toward:
+
+1. Operating expenses
+2. Staff remuneration
+3. Maintenance and replacement reserves
+4. Debt servicing (if applicable)
+5. Capital reinvestment
+6. Expansion projects
+
+---
+
+## Cash Flow Cycle
+
+```mermaid
+flowchart LR
+
+Sales --> CashReceipts
+
+CashReceipts --> OperatingExpenses
+
+OperatingExpenses --> GrossCash
+
+GrossCash --> Maintenance
+
+GrossCash --> Debt
+
+GrossCash --> Expansion
+
+Expansion --> IncreasedRevenue
+
+IncreasedRevenue --> CashReceipts
+
+style GrossCash fill:#2E7D32,color:#fff
+style Expansion fill:#C9A227,color:#000
+```
+
+---
+
+# Operating Cash Flow Forecast (ZAR)
+
+| Cash Flow Item | Year 1 | Year 2 | Year 3 | Year 4 | Year 5 |
+|----------------|--------:|--------:|--------:|--------:|--------:|
+| Revenue | 3,074,000 | 6,700,000 | 14,090,000 | 22,700,000 | 36,220,000 |
+| Operating Cash Receipts | 2,920,300 | 6,365,000 | 13,385,500 | 21,565,000 | 34,409,000 |
+| Operating Expenses | (1,280,000) | (2,440,000) | (5,210,000) | (7,750,000) | (11,070,000) |
+| Working Capital Changes | (350,000) | (450,000) | (700,000) | (850,000) | (1,100,000) |
+| Net Operating Cash Flow | **1,290,300** | **3,475,000** | **7,475,500** | **12,965,000** | **22,239,000** |
+
+---
+
+# Investing Cash Flow
+
+| Item | Year 1 | Year 2 | Year 3 | Year 4 | Year 5 |
+|------|--------:|--------:|--------:|--------:|--------:|
+| Phase 1 Infrastructure | (4,850,000) | - | - | - | - |
+| Phase 2 Expansion | - | (2,250,000) | (2,250,000) | - | - |
+| Phase 3 Expansion | - | - | - | (1,575,000) | (1,575,000) |
+| Equipment Replacement Reserve | - | (150,000) | (250,000) | (350,000) | (500,000) |
+
+---
+
+# Financing Cash Flow
+
+| Item | Year 1 | Year 2 | Year 3 | Year 4 | Year 5 |
+|------|--------:|--------:|--------:|--------:|--------:|
+| Grants | 2,000,000 | 750,000 | - | - | - |
+| Equity | 1,500,000 | 500,000 | - | - | - |
+| Concessional Debt | 1,350,000 | 1,000,000 | 1,250,000 | 750,000 | - |
+| Debt Repayment | - | (250,000) | (500,000) | (850,000) | (1,200,000) |
+
+---
+
+## Net Cash Position
+
+```mermaid
+xychart-beta
+
+title "Projected Cash Position"
+
+x-axis [Y1,Y2,Y3,Y4,Y5]
+
+y-axis "Million Rand" 0 --> 25
+
+line [1.3,3.5,7.5,13.0,22.2]
+```
+
+---
+
+# Cash Reserve Policy
+
+The business will maintain a minimum operating cash reserve equivalent to:
+
+- Six months of salaries.
+- Six months of production inputs.
+- Three months of debt obligations.
+- One complete production cycle.
+- Emergency infrastructure repairs.
+
+Target Reserve:
+
+**R1.5 million by Year 3**
+
+---
+
+# 16. Forecast Balance Sheet
+
+## Balance Sheet Philosophy
+
+The AgriHub is capital intensive during its early years, transitioning into an asset-rich and cash-generative enterprise as infrastructure becomes fully operational.
+
+Asset growth is expected to outpace liabilities from Year 3 onwards.
+
+---
+
+## Projected Balance Sheet (ZAR)
+
+### Assets
+
+| Assets | Year 1 | Year 2 | Year 3 | Year 4 | Year 5 |
+|---------|--------:|--------:|--------:|--------:|--------:|
+| Cash | 1,290,300 | 3,475,000 | 7,475,500 | 12,965,000 | 22,239,000 |
+| Inventory | 320,000 | 620,000 | 1,100,000 | 1,650,000 | 2,250,000 |
+| Property, Plant & Equipment | 4,500,000 | 6,700,000 | 8,850,000 | 10,950,000 | 12,800,000 |
+| Accounts Receivable | 280,000 | 620,000 | 1,120,000 | 1,750,000 | 2,550,000 |
+
+### Total Assets
+
+| Year | Total Assets |
+|-------|-------------:|
+| Year 1 | **R6,390,300** |
+| Year 2 | **R11,415,000** |
+| Year 3 | **R18,545,500** |
+| Year 4 | **R27,315,000** |
+| Year 5 | **R39,839,000** |
+
+---
+
+### Liabilities
+
+| Liability | Year 1 | Year 2 | Year 3 | Year 4 | Year 5 |
+|------------|--------:|--------:|--------:|--------:|--------:|
+| Accounts Payable | 220,000 | 360,000 | 620,000 | 850,000 | 1,150,000 |
+| Long-Term Debt | 1,350,000 | 2,100,000 | 2,850,000 | 2,500,000 | 1,900,000 |
+
+---
+
+### Shareholders' Equity
+
+| Component | Year 5 |
+|------------|--------:|
+| Share Capital | 1,500,000 |
+| Retained Earnings | 36,439,000 |
+| Total Equity | **R37,939,000** |
+
+---
+
+## Asset Growth
+
+```mermaid
+xychart-beta
+
+title "Growth in Total Assets"
+
+x-axis [Y1,Y2,Y3,Y4,Y5]
+
+y-axis "Million Rand" 0 --> 40
+
+bar [6.4,11.4,18.5,27.3,39.8]
+```
+
+---
+
+# 17. EBITDA Analysis
+
+## Why EBITDA?
+
+EBITDA measures the underlying operating profitability of the AgriHub before accounting for financing decisions, taxation, and non-cash depreciation.
+
+This metric is widely used by:
+
+- Commercial Banks
+- DFIs
+- Private Equity
+- Impact Investors
+- Infrastructure Funds
+
+---
+
+## EBITDA Growth
+
+| Year | EBITDA | Margin |
+|-------|--------:|--------:|
+| Year 1 | 894,000 | 29.1% |
+| Year 2 | 2,340,000 | 34.9% |
+| Year 3 | 4,830,000 | 34.3% |
+| Year 4 | 8,500,000 | 37.4% |
+| Year 5 | 15,200,000 | 42.0% |
+
+---
+
+## EBITDA Trend
+
+```mermaid
+xychart-beta
+
+title "EBITDA Growth"
+
+x-axis [Y1,Y2,Y3,Y4,Y5]
+
+y-axis "Million Rand" 0 --> 16
+
+line [0.89,2.34,4.83,8.50,15.20]
+```
+
+---
+
+## EBITDA Drivers
+
+```mermaid
+mindmap
+root((EBITDA))
+
+Higher Production
+
+Subscription Revenue
+
+Water Sales
+
+Solar Savings
+
+Operational Efficiency
+
+Economies of Scale
+
+Higher Margin Products
+```
+
+---
+
+# 18. Breakeven Analysis
+
+## Financial Objective
+
+The objective of Phase 1 is to achieve operational breakeven before the end of the first production year.
+
+Annual Fixed Costs:
+
+**R1,630,000**
+
+Average Gross Margin:
+
+**70.7%**
+
+
+::contentReference[oaicite:0]{index=0}
+
+
+Annual Breakeven Revenue:
+
+> **≈ R2.31 million**
+
+Equivalent Monthly Revenue:
+
+> **≈ R192,000**
+
+---
+
+## Breakeven Timeline
+
+```mermaid
+gantt
+
+title Phase 1 Breakeven
+
+dateFormat YYYY-MM
+
+section Construction
+
+Infrastructure :done, a1, 2026-01,2026-04
+
+section Production
+
+First Planting :a2,2026-04,2026-06
+
+First Harvest :a3,2026-06,2026-07
+
+Commercial Sales :a4,2026-06,2026-12
+
+Operational Breakeven :milestone,2026-09,1d
+```
+
+---
+
+# 19. Sensitivity Analysis
+
+## Scenario Planning
+
+To evaluate financial resilience, three operating scenarios have been modelled.
+
+| Variable | Conservative | Base Case | High Growth |
+|-----------|-------------:|----------:|------------:|
+| Revenue Growth | 10% | 22% | 35% |
+| Gross Margin | 63% | 71% | 75% |
+| EBITDA Margin | 20% | 34% | 45% |
+| Customer Growth | Slow | Expected | Accelerated |
+| Expansion Pace | Delayed | Planned | Early |
+
+---
+
+## Revenue Sensitivity
+
+```mermaid
+quadrantChart
+title Revenue Risk Matrix
+
+x-axis Low Revenue --> High Revenue
+y-axis Low Risk --> High Risk
+
+quadrant-1 Strong Growth
+quadrant-2 Monitor
+quadrant-3 Restructure
+quadrant-4 Expansion Opportunity
+
+Conservative:[0.30,0.70]
+Base Case:[0.60,0.40]
+Optimistic:[0.85,0.20]
+```
+
+---
+
+## Risk Mitigation Strategy
+
+| Risk | Mitigation |
+|------|------------|
+| Drought | Borehole (subject to hydrogeological feasibility), rainwater harvesting, and bulk storage |
+| Municipal Water Interruptions | On-site purification, storage tanks, diversified water sources |
+| Electricity Outages | Hybrid solar PV with battery backup |
+| Input Cost Inflation | Long-term supplier agreements and bulk purchasing |
+| Crop Failure | Greenhouses, crop diversification, climate-smart practices |
+| Customer Concentration | Balanced mix of households, institutions, hospitality, and retail clients |
+| Financing Delays | Phased capital deployment and staged procurement |
+
+---
+
+## Financial Outlook
+
+Under the base-case assumptions, the Eastern Cape Integrated AgriHub reaches operational breakeven within the first year, becomes consistently cash-flow positive thereafter, and expands into a diversified, asset-backed agribusiness by Year 5. The phased investment strategy, strong projected EBITDA margins, and multiple revenue streams provide resilience against market volatility while positioning the business for long-term regional growth and replication.
