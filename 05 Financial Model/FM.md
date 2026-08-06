@@ -971,7 +971,7 @@ bar [6.4,11.4,18.5,27.3,39.8]
 
 # 17. EBITDA Analysis
 
-## Why EBITDA?
+##
 
 EBITDA measures the underlying operating profitability of the AgriHub before accounting for financing decisions, taxation, and non-cash depreciation.
 
@@ -1017,21 +1017,18 @@ line [0.89,2.34,4.83,8.50,15.20]
 
 ```mermaid
 mindmap
-root((EBITDA))
-
-Higher Production
-
-Subscription Revenue
-
-Water Sales
-
-Solar Savings
-
-Operational Efficiency
-
-Economies of Scale
-
-Higher Margin Products
+  root((EBITDA))
+    Food Production
+      Higher Yields
+      Higher Margin Products
+      Subscription Revenue
+    Water Security
+      Water Sales
+      Bulk Tankering Revenue
+    Operational Efficiency
+      Solar Energy Savings
+      Economies of Scale
+      Automated Irrigation
 ```
 
 ---
