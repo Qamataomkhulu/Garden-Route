@@ -1321,22 +1321,14 @@ Investors benefit from diversified revenue streams, growing asset values, and pr
 
 ```mermaid
 flowchart LR
+    Investment --> Infrastructure
+    Infrastructure --> Revenue
+    Revenue --> CashFlow["Cash Flow"]
+    CashFlow --> Expansion
+    Expansion --> HigherValuation["Higher Valuation"]
+    HigherValuation --> InvestorReturns["Investor Returns"]
 
-Investment
-
---> Infrastructure
-
---> Revenue
-
---> Cash Flow
-
---> Expansion
-
---> Higher Valuation
-
---> Investor Returns
-
-style InvestorReturns fill:#2E7D32,color:#fff
+    style InvestorReturns fill:#2E7D32,color:#fff
 ```
 
 ---
@@ -1495,23 +1487,15 @@ The model is intended to demonstrate commercial viability while recognising that
 
 ```mermaid
 mindmap
-root((Financial Model))
-
-Conservative Revenue
-
-Phased Growth
-
-Diversified Income
-
-Strong Cash Flow
-
-Infrastructure First
-
-Low Debt Risk
-
-Community Impact
-
-Long-Term Sustainability
+  root((Financial Model))
+    Conservative Revenue
+    Phased Growth
+    Diversified Income
+    Strong Cash Flow
+    Infrastructure First
+    Low Debt Risk
+    Community Impact
+    Long-Term Sustainability
 ```
 
 ---
