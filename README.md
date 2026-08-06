@@ -1,6 +1,6 @@
 <div align="center">
 
-# NACIRFA DREAM <p align="center">
+# <p align="center">
   <img src="https://github.com/Qamataomkhulu/Garden-Route/raw/main/Images/GR.png" alt="Nacirfa Dream Group Logo" width="250" />
 </p>
 The Garden Route Integrated AgriHub
