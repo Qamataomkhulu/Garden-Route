@@ -1,6 +1,15 @@
 <div align="center">
 
-# NACIRFA DREAM
+# NACIRFA DREAM <p align="center">
+  <img src="https://raw.githubusercontent.com/Qamataomkhulu/Garden-Route/main/Images/GR.png" alt="Nacirfa Dream Group Logo" width="250" />
+</p>
+
+<h1 align="center">Nacirfa Dream Group (Pty) Ltd</h1>
+
+<p align="center">
+  <b>Garden Route Integrated AgriHub</b><br>
+  <i>Confidential Business Plan & Financial Model</i>
+</p>
 ### The Garden Route Integrated AgriHub
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-1B4332?style=for-the-badge)](LICENSE)
