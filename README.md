@@ -53,8 +53,7 @@ Full details: [`VISION_AND_MISSION.md`](VISION_AND_MISSION.md)
 
 The Garden Route Integrated AgriHub is designed as a **closed-loop system** — energy powers water treatment and irrigation, water and energy power food production, and food production funds reinvestment and community distribution.
 
-```
-                             ```mermaid
+```mermaid
 graph TD
     classDef solar fill:#f9f,stroke:#333,stroke-width:2px;
     classDef water fill:#bbf,stroke:#333,stroke-width:2px;
@@ -67,8 +66,6 @@ graph TD
     D --> E[📦 Subscription Boxes]
     D --> F[🏫 School & Community Supply]
     B --> G[🚰 Community Water Delivery]
-```
-
 ---
 
 ## Core Business Pillars
