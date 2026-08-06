@@ -70,3 +70,56 @@ graph TD
     D:::gold --> E[Subscription Vegetable Boxes]:::forest
     D:::gold --> F[School & Community Wholesale]:::forest
     B:::forest --> G[Community Drinking Water Distribution]:::forest
+```
+
+---
+
+## Repository Architecture
+
+```
+Garden-Route/
+├── README.md
+├── VISION_AND_MISSION.md
+├── BUSINESS_MODEL.md
+├── CONTRIBUTING.md
+├── LICENSE
+├── 04 Market Research/
+│   └── README.md
+├── 05 Financial Model/
+│   └── README.md
+├── 06 Funding Applications/
+│   └── README.md
+├── 07 Investor Pitch Deck/
+│   └── README.md
+├── 08 Branding/
+│   └── README.md
+├── 09 Website/
+│   └── README.md
+├── 10 Technical Documentation/
+│   └── README.md
+├── 11 SOPs/
+│   └── README.md
+├── 12 Images/
+│   └── README.md
+├── 13 Legal/
+│   └── README.md
+├── 14 ESG & Impact/
+│   └── README.md
+└── 15 Press Kit/
+    └── README.md
+```
+
+| Folder | Purpose |
+|---|---|
+| [`04 Market Research`](04%20Market%20Research) | Industry analysis, target market data, competitor research, and demand studies |
+| [`05 Financial Model`](05%20Financial%20Model) | Financial projections, revenue models, budget forecasts, and unit economics |
+| [`06 Funding Applications`](06%20Funding%20Applications) | Grant applications, funding proposals, and loan documentation |
+| [`07 Investor Pitch Deck`](07%20Investor%20Pitch%20Deck) | Investor presentations, one-pagers, and pitch materials |
+| [`08 Branding`](08%20Branding) | Logo files, brand guidelines, and visual identity assets |
+| [`09 Website`](09%20Website) | Website source files, content, and web assets |
+| [`10 Technical Documentation`](10%20Technical%20Documentation) | System architecture and engineering specifications |
+| [`11 SOPs`](11%20SOPs) | Standard operating procedures for farm, water, and distribution operations |
+| [`12 Images`](12%20Images) | Photography, renders, and marketing imagery |
+| [`13 Legal`](13%20Legal) | Contracts, compliance documents, and legal agreements |
+| [`14 ESG & Impact`](14%20ESG%20&%20Impact) | Environmental, social, and governance reporting, plus impact measurement |
+| [`15 Press Kit`](15%20Press%20Kit) | Media kit, press releases, and media-ready brand assets |
