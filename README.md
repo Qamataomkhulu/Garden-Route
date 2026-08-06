@@ -150,3 +150,19 @@ This project is licensed under the [MIT License](LICENSE).
 **NACIRFA DREAM** — *Growing food, water, and opportunity — together.* 
 
 </div>
+
+
+
+```mermaid
+graph TD
+    classDef solar fill:#f9f,stroke:#333,stroke-width:2px;
+    classDef water fill:#bbf,stroke:#333,stroke-width:2px;
+    classDef food fill:#bfb,stroke:#333,stroke-width:2px;
+    
+    A[☀️ Solar Energy Array] --> B[💧 Purification & Borehole]
+    A --> C[🌱 Solar Irrigation Systems]
+    B --> D[🥬 Food Production & Seedlings]
+    C --> D
+    D --> E[📦 Subscription Boxes]
+    D --> F[🏫 School & Community Supply]
+    B --> G[🚰 Community Water Delivery]
