@@ -1,7 +1,7 @@
 <div align="center">
 
 # NACIRFA DREAM <p align="center">
-  <img src="https://raw.githubusercontent.com/Qamataomkhulu/Garden-Route/main/Images/GR.png" alt="Nacirfa Dream Group Logo" width="250" />
+  <img src="https://raw.githubusercontent.com/Qamataomkhulu/Garden-Route/main/Images/GRnb.png" alt="Nacirfa Dream Group Logo" width="250" />
 </p>
 
 <h1 align="center">Nacirfa Dream Group (Pty) Ltd</h1>
