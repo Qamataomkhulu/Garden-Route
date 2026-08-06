@@ -76,40 +76,6 @@ graph TD
 
 ---
 
-## Repository Architecture
-
-```
-Garden-Route/
-├── README.md
-├── VISION_AND_MISSION.md
-├── BUSINESS_MODEL.md
-├── CONTRIBUTING.md
-├── LICENSE
-├── 04 Market Research/
-│   └── README.md
-├── 05 Financial Model/
-│   └── README.md
-├── 06 Funding Applications/
-│   └── README.md
-├── 07 Investor Pitch Deck/
-│   └── README.md
-├── 08 Branding/
-│   └── README.md
-├── 09 Website/
-│   └── README.md
-├── 10 Technical Documentation/
-│   └── README.md
-├── 11 SOPs/
-│   └── README.md
-├── 12 Images/
-│   └── README.md
-├── 13 Legal/
-│   └── README.md
-├── 14 ESG & Impact/
-│   └── README.md
-└── 15 Press Kit/
-    └── README.md
-```
 
 | Folder | Purpose |
 |---|---|
