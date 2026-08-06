@@ -1,9 +1,9 @@
 <div align="center">
 
 # NACIRFA DREAM <p align="center">
-  <img src="./GR.png" alt="Nacirfa Dream Group Logo" width="250" />
+  <img src="./GRnb.png" alt="Nacirfa Dream Group Logo" />
 </p>
-### The Garden Route Integrated AgriHub
+The Garden Route Integrated AgriHub
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-1B4332?style=for-the-badge)](LICENSE)
 [![Status](https://img.shields.io/badge/Status-Active%20Development-D4AF37?style=for-the-badge)](#)
