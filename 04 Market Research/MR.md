@@ -76,15 +76,24 @@ The project has been designed around four strategic pillars:
 
 ```mermaid
 mindmap
-root((Eastern Cape Integrated AgriHub))
-
-Food Production
-
-Water Security
-
-Renewable Energy
-
-Community Development
+  root((Garden Route Integrated AgriHub))
+    Food Production
+      Open-field Crops
+      Greenhouse Tunnels
+      Hydroponics & Herbs
+      Seedling Nursery
+    Water Security
+      Reverse Osmosis Purification
+      Rainwater Harvesting
+      Bulk Storage & Tankering
+    Renewable Energy
+      Solar Irrigation Pumping
+      Hybrid Solar PV Grid
+      Off-Grid Cold Storage
+    Distribution & Impact
+      Household Subscriptions
+      Institutional Supply
+      Youth Skills Training
 ```
 
 Unlike conventional farming operations, the AgriHub generates multiple recurring revenue streams while reducing dependence on unreliable municipal infrastructure through integrated resource management.
