@@ -38,22 +38,22 @@ NACIRFA DREAM operates as an **integrated multi-revenue agribusiness**, where co
 
 NACIRFA DREAM's distribution strategy is built around **shortening the path between production and the household**, while keeping pricing accessible.
 
-### 🥬 Subscription Vegetable Boxes
+### Subscription Vegetable Boxes
 - Recurring weekly/bi-weekly boxes delivered directly to households
 - Tiered box sizes for individuals, families, and bulk buyers
 - Predictable demand → predictable production planning
 
-### 💧 Water Delivery
+### Water Delivery
 - Bulk and household-scale delivery of purified water
 - Priority access for communities most affected by supply instability
 - Optional refill/subscription model to reduce packaging waste
 
-### 🏫 Institutional Supply
+### Institutional Supply
 - Direct supply agreements with local schools and businesses
 - Volume-based pricing to support consistent institutional demand
 - Positions NACIRFA DREAM as embedded local infrastructure, not just a vendor
 
-### 🛒 Direct-to-Community Sales
+### Direct-to-Community Sales
 - On-site and pop-up sales for walk-in/local buyers
 - Strengthens community relationships and brand trust
 - Acts as a real-time demand signal for production planning
