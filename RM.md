@@ -374,7 +374,9 @@ The Garden Route Integrated AgriHub has been designed as a scalable platform for
 
 <div align="center">
 
-### Nacirfa Dream Group (Pty) Ltd
+### Nacirfa Dream Group (Pty) Ltd <p align="center">
+  <img src="Images/GRnb.png" width="250">
+</p>
 
 Building resilient agricultural ecosystems for future generations.
 
