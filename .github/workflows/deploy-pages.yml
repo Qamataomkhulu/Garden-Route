@@ -1,0 +1,54 @@
+name: Deploy Garden Route Website to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Assemble site output
+        run: |
+          set -e
+          mkdir -p _site
+          # Copy the website source (index.html, styles.css, script.js, etc.)
+          cp -r "09 Website/." _site/
+          # Copy brand/site images alongside index.html so relative paths (Images/...) resolve
+          mkdir -p _site/Images
+          cp Images/GR.png _site/Images/ 2>/dev/null || true
+          cp Images/GRnb.png _site/Images/ 2>/dev/null || true
+          echo "Site contents:"
+          find _site -maxdepth 2
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
