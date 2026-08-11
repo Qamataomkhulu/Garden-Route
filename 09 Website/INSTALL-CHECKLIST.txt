@@ -1,0 +1,9 @@
+1. BACK UP the current 09 Website folder.
+2. Do NOT replace index.html.
+3. Add css/multipage.css.
+4. Add js/multipage.js.
+5. Add the pages/ folder and its six HTML pages.
+6. Keep the existing assets/GR.png and assets/GRnb.png. The copies in this package are reference copies.
+7. Test index.html first — it should behave exactly as before.
+8. Test pages/contact.html, business.html, finance.html, operations.html, impact.html and investor.html.
+9. On GitHub Pages, confirm the URL ends in /Garden-Route/ and that page links resolve relatively.
