@@ -1,0 +1,1 @@
+Place GR.png and GRnb.png here. Existing external stock imagery remains remote so the package stays lightweight.
