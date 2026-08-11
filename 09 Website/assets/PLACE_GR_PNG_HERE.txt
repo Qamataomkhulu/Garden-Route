@@ -1,1 +1,0 @@
-Replace this file with your actual GR.png logo at assets/GR.png.
