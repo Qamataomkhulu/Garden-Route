@@ -1,28 +1,22 @@
-# Garden Route Integrated AgriHub Website
+# Garden Route Integrated AgriHub — Investor Portal Update
 
-A lightweight, framework-free website for GitHub Pages.
+This package preserves the supplied `index(3).html` as the master website and makes only the requested addition/replacement:
 
-## Run locally
+- Removes the old Institutional Data Room block.
+- Replaces it with the Investor Portal section supplied by the project owner.
+- Links every document card directly to its source document in the Garden-Route GitHub repository.
+- Adds the Verified Source block and repository link.
+- Preserves the existing dashboard, graphs, Seed-to-Shelf interactions, phase modals, roadmap, branding and animations.
+- Cleans the JavaScript so the new direct-link document cards do not depend on GitHub iframe embedding.
 
-```bash
-python3 -m http.server 8000
+## Required structure
+
+```text
+index.html
+css/style.css
+js/script.js
+assets/GR.png
+assets/GRnb.png
 ```
 
-Open `http://localhost:8000`.
-
-## GitHub Pages
-
-Put these files in the directory configured for GitHub Pages, then enable Pages under **Settings → Pages** and select the appropriate branch/folder.
-
-## Site sections
-
-- Hero / business proposition
-- Five-year impact dashboard
-- Integrated ecosystem
-- Harvest-to-shelf journey
-- Eastern Cape climate-resilience positioning
-- Three-phase capital model
-- Illustrative five-year revenue chart
-- Partner/contact section
-
-Financial numbers are presented as current model targets and are not guarantees.
+The existing website already references the logo files above. Keep those assets in the `assets` directory.
