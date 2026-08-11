@@ -1,0 +1,1 @@
+Optional: place your farm hero image here as farm.jpg. The homepage automatically uses it as the hero background.
