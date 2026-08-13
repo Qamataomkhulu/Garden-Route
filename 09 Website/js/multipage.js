@@ -10,7 +10,6 @@
   const $$ = (s, r = document) => [...r.querySelectorAll(s)];
   const reduceMotion = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
 
-  // Reveal motion
   const reveal = $$('.reveal, .page-reveal');
   if (reduceMotion || !('IntersectionObserver' in window)) {
     reveal.forEach(el => el.classList.add('visible'));
@@ -26,14 +25,12 @@
     reveal.forEach(el => io.observe(el));
   }
 
-  // Back-to-top
   const backTop = $('#backTop');
   const updateBackTop = () => backTop?.classList.toggle('visible', window.scrollY > window.innerHeight * .65);
   window.addEventListener('scroll', updateBackTop, { passive: true });
   updateBackTop();
   backTop?.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
-  // Mobile navigation
   const menu = $('.menu');
   const nav = $('header nav');
   if (menu && nav) {
@@ -46,7 +43,6 @@
     });
   }
 
-  // Financial bar animation
   const bars = $$('.bar-col .bar[data-height]');
   const animateBars = () => bars.forEach(bar => { bar.style.height = `${bar.dataset.height}%`; });
   if (reduceMotion || !('IntersectionObserver' in window)) animateBars();
@@ -62,7 +58,6 @@
     bars.forEach(bar => io.observe(bar));
   }
 
-  // SVG revenue trajectory
   const lines = $$('.chart-line');
   const revealLine = line => {
     line.classList.add('is-visible');
@@ -76,7 +71,6 @@
     lines.forEach(line => io.observe(line));
   }
 
-  // Phase detail panels
   const phaseCards = $$('.phase-card[data-phase-detail]');
   const phaseDetail = $('#phaseDetail');
   const activatePhase = card => {
@@ -87,7 +81,6 @@
   phaseCards.forEach(card => card.addEventListener('click', () => activatePhase(card)));
   if (phaseCards[0] && phaseDetail) activatePhase(phaseCards[0]);
 
-  // Investor scenario model
   const capital = $('#scenarioCapital');
   if (capital) {
     const share = $('#scenarioShare');
@@ -104,7 +97,6 @@
     update();
   }
 
-  // Investor document search
   const docSearch = $('#pageDocSearch');
   if (docSearch) {
     const docs = $$('.doc-mini');
@@ -116,7 +108,6 @@
     });
   }
 
-  // Static GitHub Pages forms: prepare a mailto enquiry without a backend.
   const setupForm = (formId, statusId, subject) => {
     const form = $(`#${formId}`);
     const status = $(`#${statusId}`);
@@ -140,3 +131,9 @@
   setupForm('pageInvestorForm', 'pageFormStatus', 'Garden Route AgriHub — Investor Enquiry');
   setupForm('contactForm', 'contactStatus', 'Garden Route AgriHub — Contact Enquiry');
 })();
+
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/Garden-Route/sw.js', { scope: '/Garden-Route/' }).catch(() => {});
+  });
+}

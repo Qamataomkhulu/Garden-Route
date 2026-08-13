@@ -17,9 +17,6 @@ document.addEventListener('DOMContentLoaded', () => {
     window.setTimeout(() => { live.textContent = message; }, 20);
   };
 
-  /* ---------------------------------------------------------------
-     Reveal animations
-  --------------------------------------------------------------- */
   const revealEls = $$('.reveal');
   if ('IntersectionObserver' in window) {
     const revealObserver = new IntersectionObserver((entries, observer) => {
@@ -35,9 +32,6 @@ document.addEventListener('DOMContentLoaded', () => {
     revealEls.forEach(el => el.classList.add('visible'));
   }
 
-  /* ---------------------------------------------------------------
-     Header, scroll progress and back-to-top
-  --------------------------------------------------------------- */
   const header = $('#topbar');
   const backTop = $('#backTop');
 
@@ -55,9 +49,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   backTop?.addEventListener('click', () => window.scrollTo({top:0, behavior:'smooth'}));
 
-  /* ---------------------------------------------------------------
-     Mobile navigation
-  --------------------------------------------------------------- */
   const menu = $('.menu');
   menu?.addEventListener('click', () => {
     header?.classList.toggle('nav-open');
@@ -71,9 +62,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if (menu) menu.textContent = 'Menu';
   }));
 
-  /* ---------------------------------------------------------------
-     Smooth internal navigation
-  --------------------------------------------------------------- */
   $$('a[href^="#"]').forEach(link => {
     link.addEventListener('click', e => {
       const id = link.getAttribute('href');
@@ -86,9 +74,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  /* ---------------------------------------------------------------
-     Theme toggle
-  --------------------------------------------------------------- */
   const themeToggle = $('#themeToggle');
   const savedTheme = localStorage.getItem('agrihub-theme');
   if (savedTheme === 'dark') document.body.classList.add('theme-dark');
@@ -108,9 +93,6 @@ document.addEventListener('DOMContentLoaded', () => {
     announce(document.body.classList.contains('theme-dark') ? 'Dark mode enabled' : 'Light mode enabled');
   });
 
-  /* ---------------------------------------------------------------
-     KPI counters
-  --------------------------------------------------------------- */
   function animateValue(el, target, duration=1100, formatter=n => n.toLocaleString()) {
     const start = performance.now();
     const from = 0;
@@ -142,9 +124,6 @@ document.addEventListener('DOMContentLoaded', () => {
     countEls.forEach(el => countObs.observe(el));
   }
 
-  /* ---------------------------------------------------------------
-     Dashboard tabs
-  --------------------------------------------------------------- */
   $$('.chart-tab').forEach(tab => {
     tab.addEventListener('click', () => {
       $$('.chart-tab').forEach(t => {
@@ -159,9 +138,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  /* ---------------------------------------------------------------
-     Export dashboard CSV
-  --------------------------------------------------------------- */
   $('#exportDashboard')?.addEventListener('click', () => {
     const rows = [
       ['Metric','Year 1','Year 5'],
@@ -184,9 +160,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   $('#printDashboard')?.addEventListener('click', () => window.print());
 
-  /* ---------------------------------------------------------------
-     Investor scenario model
-  --------------------------------------------------------------- */
   const scenarioInvestment = $('#scenarioInvestment');
   function updateScenario() {
     if (!scenarioInvestment) return;
@@ -203,9 +176,6 @@ document.addEventListener('DOMContentLoaded', () => {
   scenarioInvestment?.addEventListener('input', updateScenario);
   updateScenario();
 
-  /* ---------------------------------------------------------------
-     Revenue mix filters/search
-  --------------------------------------------------------------- */
   const docCards = $$('.doc-card');
   const docSearch = $('#docSearch');
   const docFilters = $$('.doc-filter');
@@ -227,9 +197,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }));
   docSearch?.addEventListener('input', filterDocuments);
 
-  /* ---------------------------------------------------------------
-     Investor portal document intelligence
-  --------------------------------------------------------------- */
   const docModal = $('#docModal');
   const docRender = $('#docRender');
   const docTitle = $('#docTitle');
@@ -289,9 +256,6 @@ document.addEventListener('DOMContentLoaded', () => {
   $('#closeDoc')?.addEventListener('click', closeDoc);
   $('#docClose2')?.addEventListener('click', closeDoc);
 
-  /* ---------------------------------------------------------------
-     Seed-to-shelf technical domains
-  --------------------------------------------------------------- */
   const stageData = {
     seed:{title:'Seed & Nursery',intro:'Propagation creates a reliable starting point for AgriHub production and partner growers.',scope:['Seed selection and traceability','Propagation and germination','Hardening and nursery scheduling','Dispatch and grower coordination'],sop:'Nursery hygiene → propagation → irrigation → hardening → quality check → dispatch',git:'10%20Technical%20Documentation/Technical%20Documentation.md'},
     land:{title:'Land & Soil',intro:'The productive footprint establishes the physical base for open-field production, protected agriculture and future expansion.',scope:['Land assessment and zoning','Soil testing and fertility planning','Drainage and access','Irrigation layout and production zoning'],sop:'Site assessment → soil test → preparation → zoning → planting plan → monitoring',git:'10%20Technical%20Documentation/Technical%20Documentation.md'},
@@ -320,9 +284,6 @@ document.addEventListener('DOMContentLoaded', () => {
   $('#closeModal')?.addEventListener('click',closeStage);
   $('#closeModal2')?.addEventListener('click',closeStage);
 
-  /* ---------------------------------------------------------------
-     Roadmap
-  --------------------------------------------------------------- */
   const roadmapData = {
     2026:['2026 · PHASE 1','Infrastructure, solar, water and proof of concept.','Establish the productive operating base, secure water resilience, deploy Phase 1 solar and validate commercial demand.'],
     2027:['2027 · COMMERCIAL PRODUCTION','Production ramp-up and market validation.','Increase production, activate household subscriptions and institutional sales while strengthening operating procedures.'],
@@ -338,9 +299,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if (panel && d) panel.innerHTML=`<span class="eyebrow">${d[0]}</span><h4>${d[1]}</h4><p>${d[2]}</p>`;
   }));
 
-  /* ---------------------------------------------------------------
-     Capital deployment — dynamic current view, no pop-up
-  --------------------------------------------------------------- */
   const capitalData = {
     phase1:['PHASE 1 · FOUNDATION','Establish the operating base.','Land preparation, 1,000m² tunnels, Phase 1 water purification, 5kW solar, logistics and working capital.',['R4.85M|Capital','5 kW|Solar','10,000 L/day|Water','15 t/year|Production']],
     phase2:['PHASE 2 · SCALE-UP','Convert proof of concept into commercial capacity.','Production expansion, water and solar capacity, distribution capability and working capital to support commercial scale.',['R4.50M|Capital','25 kW|Solar target','1M L/year|Water target','55 t/year|Production target']],
@@ -354,9 +312,6 @@ document.addEventListener('DOMContentLoaded', () => {
     announce(`${d[0]} capital deployment selected`);
   }));
 
-  /* ---------------------------------------------------------------
-     Decision surface
-  --------------------------------------------------------------- */
   const decisions = {
     opportunity:['01 · OPPORTUNITY','One ecosystem. Multiple resilience layers.','Food production, water, energy and market access are designed as connected commercial layers rather than isolated projects.',['Food security','Water resilience','Energy resilience','Economic opportunity'],'5','resilience layers','food · water · energy · market · community'],
     money:['02 · MONEY','Build revenue through diversification.','Multiple operating streams are intended to reduce dependence on a single crop, customer or service layer.',['Vegetables','Water services','Wholesale produce','Greenhouses'],'8','revenue streams','diversified commercial model'],
@@ -372,9 +327,6 @@ document.addEventListener('DOMContentLoaded', () => {
     $('#decisionMetric').innerHTML=`<strong>${d[4]}</strong><span>${d[5]}</span><em>${d[6]}</em>`;
   }));
 
-  /* ---------------------------------------------------------------
-     Financial intelligence scenarios
-  --------------------------------------------------------------- */
   const scenarios = {
     base:{revenue:36.22,ebitda:15.20,margin:'42.0%',years:[3.074,6.70,14.09,22.70,36.22],note:'Current model'},
     conservative:{revenue:28.40,ebitda:10.80,margin:'38.0%',years:[3.074,5.80,10.80,18.20,28.40],note:'Illustrative downside planning view'},
@@ -395,9 +347,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }));
   renderScenario('base');
 
-  /* ---------------------------------------------------------------
-     Operating footprint layers
-  --------------------------------------------------------------- */
   const mapText = {
     hub:'Core operating hub connecting land, water, energy, production and distribution.',
     water:'Water layer: capture, storage, treatment and distribution supporting production resilience.',
@@ -410,9 +359,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if($('#mapLayerText'))$('#mapLayerText').textContent=mapText[btn.dataset.layer]||'';
   }));
 
-  /* ---------------------------------------------------------------
-     Digital twin
-  --------------------------------------------------------------- */
   const twin = {
     land:['LAND','Site preparation, production zoning and expansion capacity.','→ Operations + Technical Documentation'],
     water:['WATER','Storage, purification, irrigation resilience and future distribution services.','→ Technical Documentation + SOP Library'],
@@ -428,9 +374,6 @@ document.addEventListener('DOMContentLoaded', () => {
     $('#dtReadout').innerHTML=`<strong>${d[0]}</strong><span>${d[1]}</span><em>${d[2]}</em>`;
   }));
 
-  /* ---------------------------------------------------------------
-     Investor mode / share view
-  --------------------------------------------------------------- */
   const overlay=$('#investorModeOverlay');
   $('#investorModeBtn')?.addEventListener('click',()=>{
     overlay?.classList.add('open');overlay?.setAttribute('aria-hidden','false');document.body.style.overflow='hidden';
@@ -443,9 +386,6 @@ document.addEventListener('DOMContentLoaded', () => {
     catch{window.prompt('Copy investor view link:',url);}
   });
 
-  /* ---------------------------------------------------------------
-     Investor form — static GitHub Pages mailto preparation
-  --------------------------------------------------------------- */
   $('#investorForm')?.addEventListener('submit',e=>{
     e.preventDefault();
     const form=e.currentTarget;
@@ -466,9 +406,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if(status)status.textContent='Your email client should open with the enquiry prepared.';
   });
 
-  /* ---------------------------------------------------------------
-     Keyboard / Escape / outside-click
-  --------------------------------------------------------------- */
   document.addEventListener('keydown',e=>{
     if(e.key !== 'Escape') return;
     closeDoc(); closeStage(); closeInvestorMode();
@@ -477,9 +414,6 @@ document.addEventListener('DOMContentLoaded', () => {
     modal?.addEventListener('click',e=>{if(e.target===modal){modal===docModal?closeDoc():closeStage();}});
   });
 
-  /* ---------------------------------------------------------------
-     Gentle hero parallax — disabled for reduced motion
-  --------------------------------------------------------------- */
   if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches){
     const heroBg=$('.hero-bg');
     let ticking=false;
@@ -493,9 +427,6 @@ document.addEventListener('DOMContentLoaded', () => {
     },{passive:true});
   }
 
-  /* ---------------------------------------------------------------
-     Initial accessibility states
-  --------------------------------------------------------------- */
   $$('.decision-card,.roadmap-node,.map-layer,.chart-tab').forEach(el=>{
     if(el.tagName==='BUTTON' && !el.hasAttribute('aria-label')) el.setAttribute('aria-label',el.textContent.trim());
   });
@@ -507,3 +438,9 @@ document.addEventListener('DOMContentLoaded', () => {
     closeInvestorMode
   };
 });
+
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/Garden-Route/sw.js', { scope: '/Garden-Route/' }).catch(() => {});
+  });
+}

@@ -1,5 +1,5 @@
-const CACHE='agrihub-level2-v1';
-const ASSETS=['./','./index.html','./css/style.css','./js/script.js','./assets/GR.png','./assets/GRnb.png'];
+const CACHE='agrihub-level2-v2';
+const ASSETS=['./','./index.html','./css/style.css','./css/multipage.css','./js/script.js','./js/multipage.js','./assets/GR.png','./assets/GRnb.png','./pages/business.html','./pages/finance.html','./pages/operations.html','./pages/impact.html','./pages/investor.html','./pages/contact.html'];
 self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(ASSETS)).then(()=>self.skipWaiting())));
 self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
 self.addEventListener('fetch',e=>{if(e.request.method!=='GET')return;e.respondWith(caches.match(e.request).then(cached=>cached||fetch(e.request).then(r=>{const copy=r.clone();caches.open(CACHE).then(c=>c.put(e.request,copy));return r}).catch(()=>cached)))});
